@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="auto" fill="none">
+  <!-- Fundo sutil / Glow -->
+  <rect x="40" y="40" width="420" height="420" rx="36" fill="#EEF2FF" />
+  
+  <!-- Card Principal de Dashboard -->
+  <rect x="80" y="80" width="340" height="340" rx="24" fill="#FFFFFF" filter="drop-shadow(0 10px 25px rgba(79, 70, 229, 0.08))" />
+  
+  <!-- Barra Superior do Card -->
+  <circle cx="115" cy="115" r="6" fill="#EF4444" />
+  <circle cx="135" cy="115" r="6" fill="#F59E0B" />
+  <circle cx="155" cy="115" r="6" fill="#10B981" />
+  <rect x="260" y="108" width="120" height="14" rx="7" fill="#F1F5F9" />
+
+  <!-- Item de Tarefa 1 (Concluído) -->
+  <rect x="110" y="160" width="280" height="52" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" />
+  <rect x="126" y="176" width="20" height="20" rx="6" fill="#4F46E5" />
+  <path d="M131 186 L135 190 L141 182" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="160" y="181" width="140" height="10" rx="5" fill="#0F172A" />
+
+  <!-- Item de Tarefa 2 (Concluído) -->
+  <rect x="110" y="226" width="280" height="52" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" />
+  <rect x="126" y="242" width="20" height="20" rx="6" fill="#4F46E5" />
+  <path d="M131 252 L135 256 L141 248" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="160" y="247" width="100" height="10" rx="5" fill="#0F172A" />
+
+  <!-- Bloco de Progresso / Gráfico -->
+  <rect x="110" y="296" width="280" height="84" rx="14" fill="#4F46E5" />
+  <rect x="130" y="316" width="90" height="8" rx="4" fill="#C7D2FE" />
+  <rect x="130" y="332" width="150" height="16" rx="8" fill="#FFFFFF" />
+  <circle cx="340" cy="338" r="22" stroke="#818CF8" stroke-width="5" />
+  <circle cx="340" cy="338" r="22" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="80 140" stroke-linecap="round" />
+</svg>
