@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean Tech</title>
     <link rel="stylesheet" href="style.css">
-
+    <!-- biblioteca -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -40,7 +41,57 @@
                 <img src="./assets/hero-illustration.svg" alt="" width="450">
             </div>
         </section>
+
+        <!-- Nova Seção: Recursos / Destaques -->
+        <section class="produtos" id="recursos">
+            <div class="produtos-header">
+                <h2>Recursos</h2>
+                <div class="detalhe"></div>
+                <p>Conheça ferramentas exclusivas pensadas e preparadas para otimizar sua rotina e manter o seu foco em
+                    dia.</p>
+                <a href="">Ver todos &gt;</a>
+            </div>
+
+            <!-- Container que segura os 3 cards lado a lado -->
+            <div class="cards-container">
+                <div class="card card-1" data-aos="zoom-in-up" data-aos-delay="200">
+                    <!-- card 1 -->
+                    <img src="./assets/card-foco.svg" alt="">
+                    <h3>Metodologia</h3>
+                    <h2>Blocos de Foco</h2>
+                    <p>Sessões guiadas de estudo e trabalho sem interrupções com método pomodoro integrado.</p>
+                    <a href="">Explorar</a>
+                </div>
+
+                <div class="card card-2" data-aos="zoom-in-up" data-aos-delay="200">
+                    <!-- card 2 -->
+                    <img src="./assets/card-rotina.svg" alt="">
+                    <h3>Constância</h3>
+                    <h2>Rotina Diária</h2>
+                    <p>Controle visual e rastreador de hábitos para manter o ritmo sem procrastinar.</p>
+                    <a href="">Explorar</a>
+                </div>
+
+                <div class="card card-3" data-aos="zoom-in-up" data-aos-delay="200">
+                    <!-- card 3 -->
+                    <img src="./assets/card-metricas.svg" alt="">
+                    <h3>Desempenho</h3>
+                    <h2>Métricas Claras</h2>
+                    <p>Relatórios objetivos da sua evolução diária, metas batidas e tempo dedicado.</p>
+                    <a href="">Explorar</a>
+                </div>
+            </div>
+
+
+        </section>
     </main>
+
+
+    <!-- AOS JS da fonte oficial -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -133,3 +133,101 @@ header {
         width: 350px;
     }
 }
+
+#recursos {
+    border: 1px solid red;
+    /* padding: 80px 120px; */
+
+    & .produtos-header {
+        color: var(--color-brand-hover);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        & h2 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        & .detalhe {
+            width: 65px;
+            background-color: #0f172a;
+            height: 1px;
+            margin-bottom: 16px;
+        }
+
+        & p {
+            width: 540px;
+            margin-bottom: 30px;
+        }
+
+        & a {
+            color: #0f172a;
+            font-weight: bold;
+        }
+    }
+
+    & .cards-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /*usar essa no lugar de heigth*/
+        padding: 0 220px;
+        margin-top: 60px;
+        /* espaçamento entre os cards */
+        gap: 70px;
+
+
+        /* Estrutura compartilhada igualmente pelos 3 cards */
+        & .card {
+            border: 1px solid rgb(255, 0, 221);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--text-main);
+            border-radius: var(--radius-md);
+            padding: 25px 30px;
+            /* width: 200px; */
+            background-color: rgb(229, 212, 236);
+            text-align: center;
+
+            &.card-1 {
+                background-image: linear-gradient(90deg, #698799 4.72%, #b6b3e4, #9e569e);
+            }
+
+            &.card-2 {
+                background-image: linear-gradient(202.65deg, #c99e9e 4.72%, #cd7fdd, #794a79);
+            }
+
+            &.card-3 {
+                background-image: linear-gradient(202.65deg, #d3d4e459, #d38989, #310631);
+            }
+
+            & h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            & h2 {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+
+            & a {
+                display: block;
+                background-color: #4f46e5;
+                /*usar essa no lugar de heigth*/
+                line-height: 46px;
+                border-radius: 25px;
+                width: 100%;
+                text-align: center;
+                font-weight: 400;
+                margin-top: 30px;
+                color: #dfe1e6;
+                margin-top: auto;
+                box-shadow: 0 8px 7px #00000050;
+            }
+        }
+    }
+
+}
