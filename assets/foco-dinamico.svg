@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" fill="none">
+  <defs>
+    <!-- Gradiente Principal -->
+    <linearGradient id="purpleGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Gradiente de Preenchimento do Disco Central -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#312e81" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#0f172a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+
+    <!-- Filtro de Brilho Neon -->
+    <filter id="neonBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Brilho de fundo / Aura -->
+  <circle cx="250" cy="250" r="170" fill="#4f46e5" opacity="0.18" filter="url(#neonBlur)"/>
+
+  <!-- Órbita tracejada externa com partículas -->
+  <circle cx="250" cy="250" r="210" stroke="#334155" stroke-width="2" stroke-dasharray="6 8"/>
+  <circle cx="250" cy="40" r="6" fill="#a855f7" filter="url(#neonBlur)"/>
+  <circle cx="430" cy="180" r="4" fill="#06b6d4"/>
+  <circle cx="80" cy="310" r="5" fill="#4f46e5"/>
+
+  <!-- Anel de Progresso Tecnológico -->
+  <circle cx="250" cy="250" r="160" stroke="#1e293b" stroke-width="12"/>
+  <circle cx="250" cy="250" r="160" stroke="url(#purpleGlow)" stroke-width="12" stroke-linecap="round"
+          stroke-dasharray="1005" stroke-dashoffset="260" filter="url(#neonBlur)"/>
+
+  <!-- Núcleo Central -->
+  <circle cx="250" cy="250" r="125" fill="url(#coreGlow)" stroke="#475569" stroke-width="2"/>
+  <circle cx="250" cy="250" r="95" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Indicadores de Pulso / Frequência de Foco -->
+  <rect x="205" y="235" width="8" height="30" rx="4" fill="#4f46e5"/>
+  <rect x="220" y="215" width="8" height="70" rx="4" fill="#6366f1"/>
+  <rect x="235" y="195" width="8" height="110" rx="4" fill="#a855f7" filter="url(#neonBlur)"/>
+  <rect x="250" y="180" width="8" height="140" rx="4" fill="#38bdf8" filter="url(#neonBlur)"/>
+  <rect x="265" y="200" width="8" height="100" rx="4" fill="#a855f7" filter="url(#neonBlur)"/>
+  <rect x="280" y="225" width="8" height="50" rx="4" fill="#6366f1"/>
+  <rect x="295" y="240" width="8" height="20" rx="4" fill="#4f46e5"/>
+
+  <!-- Badge Superior "100% FOCUS" -->
+  <rect x="185" y="120" width="130" height="28" rx="14" fill="#0f172a" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="250" y="139" fill="#e2e8f0" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="2" text-anchor="middle">CLEAN FOCUS</text>
+
+  <!-- Tag Inferior "FLOW STATE" -->
+  <rect x="195" y="352" width="110" height="26" rx="13" fill="#1e1b4b" stroke="#38bdf8" stroke-width="1"/>
+  <text x="250" y="369" fill="#38bdf8" font-size="10" font-family="system-ui, -apple-system, sans-serif" font-weight="600" letter-spacing="1.5" text-anchor="middle">LIVE SYNC</text>
+</svg>

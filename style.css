@@ -3,8 +3,9 @@
 
 :root {
     /* Paleta de Cores do Fundo e Superfícies */
-    --bg-primary: #fafafc;
-    --bg-card: #ffffff;
+    --bg-primary: #0b0d13;
+    --bg-card: #151821;
+    --border-card: #232838;
     /* Cores da Marca (Brand) */
     --color-brand: #4f46e5;
     --color-brand-hover: #4338ca;
@@ -163,7 +164,7 @@ header {
         }
 
         & a {
-            color: #0f172a;
+            color: var(--btn-primary-bg);
             font-weight: bold;
         }
     }
@@ -180,7 +181,7 @@ header {
 
         /* Estrutura compartilhada igualmente pelos 3 cards */
         & .card {
-            border: 1px solid rgb(255, 0, 221);
+            border: 1px solid rgb(31, 9, 224);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -192,15 +193,15 @@ header {
             text-align: center;
 
             &.card-1 {
-                background-image: linear-gradient(90deg, #698799 4.72%, #b6b3e4, #9e569e);
+                background-image: linear-gradient(202.65deg, #8039f1 4.72%, #d3d2e7, #6215f1);
             }
 
             &.card-2 {
-                background-image: linear-gradient(202.65deg, #c99e9e 4.72%, #cd7fdd, #794a79);
+                background-image: linear-gradient(202.65deg, #5c4af7 4.72%, #abc3e7, #eae9f1);
             }
 
             &.card-3 {
-                background-image: linear-gradient(202.65deg, #d3d4e459, #d38989, #310631);
+                background-image: linear-gradient(202.65deg, #1b29eb59, #1e58f8, #310631);
             }
 
             & h3 {
@@ -229,5 +230,133 @@ header {
             }
         }
     }
+
+}
+
+#habitos {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & span {
+        line-height: 40px;
+        display: inline-block;
+        padding: 0 15px;
+        border-radius: 20px;
+        background-color: var(--color-brand);
+        font-weight: bold;
+        color: var(--btn-primary-text);
+    }
+
+    & h2 {
+        font-size: 80px;
+        color: var(--text-muted);
+        line-height: 1.15;
+        max-width: 520px;
+        margin: 16px 0;
+    }
+
+    & .detalhe {
+        width: 50px;
+        height: 1px;
+        background-color: var(--border-light);
+        margin-left: 5px;
+        margin-top: -15px;
+    }
+
+    & h3 {
+        font-size: 40px;
+        font-weight: 500;
+        color: var(--border-light);
+        margin-bottom: 16px;
+    }
+
+    & p {
+        width: 300px;
+        margin-bottom: 16px;
+        height: auto;
+        display: block;
+    }
+
+    & a {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 16px;
+        color: var(--btn-primary-bg);
+    }
+
+    & img {
+        width: 450px;
+    }
+
+}
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    width: 1115px;
+    height: 370px;
+    background-image: linear-gradient(#0d013b, #6d39cf, #554bdd);
+    border-radius: 20px;
+    padding-right: 30px;
+    border: 2px solid rgb(71, 24, 240);
+    box-shadow: 0 20px 50px rgba(181, 205, 248, 0.4);
+    text-align: right;
+
+    & h2 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    & a {
+        line-height: 50px;
+        width: 280px;
+        font-weight: bold;
+        color: var(--bg-primary);
+        display: inline-block;
+        border-radius: 20px;
+        background-color: var(--btn-primary-text);
+        margin-top: 30px;
+        text-align: center;
+        box-shadow: 0 8px 7px #00000050;
+    }
+
+}
+
+#contato {
+    width: 1115px;
+    margin: 0 auto;
+    border-radius: 40px;
+    display: flex;
+    background-image: linear-gradient(#dbdce6, #7169b6, #502186);
+    color: #ffffff;
+    padding-left: 40px;
+    position: relative;
+
+    & h2 {
+        font-size: 80px;
+        line-height: 84px;
+    }
+
+    & .detalhe {
+        width: 50px;
+        height: 1px;
+        background-color: var(--border-light);
+    }
+
+    & img {
+        position: absolute;
+        border: 10px solid red;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
 
 }

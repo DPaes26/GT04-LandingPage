@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <!-- Gradiente de fundo roxo suave igual ao Ray.so -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a879e6"/>
+      <stop offset="100%" stop-color="#8a53cf"/>
+    </linearGradient>
+
+    <!-- Sombra suave da janela -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <!-- Fundo Roxo -->
+  <rect width="1080" height="1080" fill="url(#bgGrad)" />
+
+  <!-- Janela Principal de Terminal/Card -->
+  <g filter="url(#shadow)">
+    <rect x="140" y="150" width="800" height="780" rx="20" fill="#18181f" stroke="#2b2b36" stroke-width="1.5" />
+
+    <!-- Barra Superior -->
+    <path d="M 140 170 Q 140 150 160 150 L 920 150 Q 940 150 940 170 L 940 210 L 140 210 Z" fill="#121217" />
+    <line x1="140" y1="210" x2="940" y2="210" stroke="#2b2b36" stroke-width="1" />
+
+    <!-- Botões Mac OS -->
+    <circle cx="175" cy="180" r="7.5" fill="#ff5f56"/>
+    <circle cx="200" cy="180" r="7.5" fill="#ffbd2e"/>
+    <circle cx="225" cy="180" r="7.5" fill="#27c93f"/>
+
+    <text x="255" y="185" fill="#6d707d" font-family="Consolas, monospace" font-size="14" font-weight="500">
+      sistema-fiec ~ industria-4.0.sh
+    </text>
+
+    <!-- Conteúdo do Card -->
+    <g transform="translate(190, 260)">
+      <!-- Tag de Categoria -->
+      <text x="0" y="20" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="700" letter-spacing="2">
+        ENGENHARIA &amp; TECNOLOGIA
+      </text>
+
+      <!-- Título Principal -->
+      <text x="0" y="65" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="34" font-weight="800">
+        Indústria 4.0 na Prática
+      </text>
+
+      <!-- Pilar 1 -->
+      <g transform="translate(0, 105)">
+        <rect width="700" height="92" rx="12" fill="#202029" stroke="#2e2e3b" stroke-width="1"/>
+        <rect width="6" height="92" rx="3" fill="#a78bfa"/>
+        <text x="32" y="55" font-size="28">⚙️</text>
+        <text x="82" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="700">
+          Processos &amp; Engenharia
+        </text>
+        <text x="82" y="68" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14">
+          Mapeamento e diagnóstico de gargalos operacionais reais
+        </text>
+      </g>
+
+      <!-- Pilar 2 -->
+      <g transform="translate(0, 217)">
+        <rect width="700" height="92" rx="12" fill="#202029" stroke="#2e2e3b" stroke-width="1"/>
+        <rect width="6" height="92" rx="3" fill="#c084fc"/>
+        <text x="32" y="55" font-size="28">💻</text>
+        <text x="82" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="700">
+          Lógica &amp; Desenvolvimento
+        </text>
+        <text x="82" y="68" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14">
+          Construção de rotinas confiáveis e estruturação de algoritmos
+        </text>
+      </g>
+
+      <!-- Pilar 3 -->
+      <g transform="translate(0, 329)">
+        <rect width="700" height="92" rx="12" fill="#202029" stroke="#2e2e3b" stroke-width="1"/>
+        <rect width="6" height="92" rx="3" fill="#818cf8"/>
+        <text x="32" y="55" font-size="28">📊</text>
+        <text x="82" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="700">
+          Dados &amp; Automação
+        </text>
+        <text x="82" y="68" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14">
+          Decisões orientadas a métricas substituindo fluxos manuais
+        </text>
+      </g>
+
+      <!-- Linha Divisória Inferior -->
+      <line x1="0" y1="465" x2="700" y2="465" stroke="#2b2b36" stroke-width="1.5" />
+
+      <!-- Rodapé / Créditos Institucionais -->
+      <text x="0" y="510" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="600" letter-spacing="0.5">
+        Ecossistema Sistema FIEC / IEL Ceará
+      </text>
+
+      <!-- Badge Geração Tech 4.0 -->
+      <rect x="520" y="488" width="180" height="32" rx="16" fill="#2d1b4e" stroke="#a78bfa" stroke-width="1"/>
+      <text x="610" y="509" text-anchor="middle" fill="#e9d5ff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="700">
+        Geração Tech 4.0
+      </text>
+    </g>
+  </g>
+</svg>

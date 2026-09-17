@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 580" width="320" height="580" fill="none">
+  <!-- Corpo do Celular -->
+  <rect x="10" y="10" width="300" height="560" rx="44" fill="#151821" stroke="#2e3547" stroke-width="4"/>
+  <!-- Ilha / Câmera Superior -->
+  <rect x="115" y="24" width="90" height="20" rx="10" fill="#0b0d13"/>
+  <!-- Tela / Conteúdo Interno -->
+  <rect x="25" y="60" width="270" height="485" rx="28" fill="#0b0d13"/>
+  <!-- Card de Destaque no App -->
+  <rect x="42" y="90" width="236" height="110" rx="16" fill="url(#gradienteApp)"/>
+  <text x="60" y="130" fill="#ffffff" font-size="14" font-family="sans-serif" font-weight="bold">Foco Diário</text>
+  <text x="60" y="160" fill="#cbd5e1" font-size="24" font-family="sans-serif" font-weight="bold">04:30h</text>
+  <!-- Barras de tarefas simuladas -->
+  <rect x="42" y="220" width="236" height="50" rx="12" fill="#1b202e"/>
+  <circle cx="65" cy="245" r="10" fill="#4f46e5"/>
+  <rect x="88" y="240" width="130" height="10" rx="5" fill="#475569"/>
+  <rect x="42" y="285" width="236" height="50" rx="12" fill="#1b202e"/>
+  <circle cx="65" cy="310" r="10" fill="#22c55e"/>
+  <rect x="88" y="305" width="100" height="10" rx="5" fill="#475569"/>
+  <!-- Barra inferior de navegação -->
+  <rect x="110" y="525" width="100" height="4" rx="2" fill="#475569"/>
+  <!-- Definição de Cores -->
+  <defs>
+    <linearGradient id="gradienteApp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+</svg>
