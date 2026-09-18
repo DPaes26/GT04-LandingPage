@@ -64,7 +64,8 @@ header {
 
 
 
-    & div {
+    & div,
+    & nav {
         display: flex;
         align-items: center;
         gap: 16px;
@@ -338,6 +339,8 @@ header {
     color: #ffffff;
     padding-left: 40px;
     position: relative;
+    justify-content: space-between;
+
 
     & h2 {
         font-size: 80px;
@@ -352,11 +355,120 @@ header {
 
     & img {
         position: absolute;
-        border: 10px solid red;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
+    &>div:nth-of-type(2) {
+        /* border: 1px solid red; */
+        width: 370px;
+        /* background-image: linear-gradient(#ffffff, #31ace6, #4007dd); */
+        padding: 0 34px;
+        font-size: 20px;
 
+        & h2 {
+            font-size: 40px;
+        }
+
+        & .detalhe {
+            width: 100%;
+            color: red;
+        }
+
+        & .endereco {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            /* border: 1px solid red; */
+
+            & box-icon {
+                width: 40px;
+                height: 40px;
+                /* background-color: red; */
+                fill: var(--border-light);
+            }
+
+            & p {
+                font-size: 16px;
+                margin-bottom: 0;
+                color: var(--border-light);
+            }
+        }
+    }
+
+
+    & h6 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 16px 0;
+    }
+
+    & p {
+        width: 350px;
+        margin-bottom: 10px;
+    }
+
+    & a {
+        /* font-weight: bold; */
+        font-size: 16px;
+        color: var(--text-main);
+    }
+
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1115px;
+    margin: 100px auto;
+    padding-top: 100px;
+    background-color: #ffffff;
+
+    & h6 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    & ul,
+    ol {
+        list-style: none;
+    }
+
+    & ul {
+        display: flex;
+        gap: 10px;
+        margin-top: 16px;
+    }
+
+    & a {
+        color: #0b0d13;
+        transition: 200ms;
+        display: block;
+        line-height: 30px;
+
+        &:hover {
+            color: var(--color-brand-hover);
+            padding-left: 10px;
+        }
+    }
+
+    & div:nth-of-type(1) {
+
+        /* especificação só para agir na primeira DIv */
+        & p {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        & a {
+            color: #0b0d13;
+
+            &:hover {
+                fill: var(--btn-primary-hover);
+            }
+        }
+    }
 }
